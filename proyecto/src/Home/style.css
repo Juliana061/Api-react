@@ -1,0 +1,86 @@
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  padding: 16px;
+}
+
+.filtros button {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filtros button.activo {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+input[type="text"] {
+  display: block;
+  margin: 0 auto 16px;
+  padding: 8px 14px;
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--code-bg);
+  color: var(--text-h);
+  font-size: 15px;
+}
+
+.shows-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  padding-bottom: 80px;
+}
+
+.show-card {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+
+.show-card:hover {
+  box-shadow: var(--shadow);
+}
+
+.show-card img {
+  width: 100%;
+  display: block;
+}
+
+.no-img {
+  height: 220px;
+  background: var(--code-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+}
+
+.show-info {
+  padding: 8px;
+  text-align: left;
+}
+
+.show-info h3 {
+  font-size: 14px;
+  margin: 0 0 4px;
+}
+
+.show-info p {
+  font-size: 12px;
+  margin: 2px 0;
+}

@@ -1,0 +1,57 @@
+/* src/Usuario/style.css */
+.usuario {
+  padding: 24px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.perfil-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 300px;
+  margin: 0 auto 16px;
+  background: var(--code-bg);
+}
+
+.avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+}
+
+.nombre {
+  font-size: 20px;
+  color: var(--text-h);
+  margin-bottom: 12px;
+}
+
+.perfil-card input {
+  width: 90%;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.perfil-card button {
+  padding: 8px 20px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.perfil-info {
+  font-size: 15px;
+}
