@@ -7,7 +7,7 @@ function Root() {
   const [splash, setSplash] = useState(true)
 
   useEffect(() => {
-    const t = setTimeout(() => setSplash(false), 2000)
+    const t = setTimeout(() => setSplash(false), 3000)
     return () => clearTimeout(t)
   }, [])
 
@@ -24,7 +24,7 @@ function Root() {
         fontSize: '24px',
         gap: '16px'
       }}>
-        <img src="/tv.png" width={80} />
+        <div style={{ fontSize: '80px' }}>📺</div>
         <p>TVMaze App</p>
       </div>
     )
