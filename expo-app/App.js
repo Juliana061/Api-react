@@ -1,11 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, View } from "react-native";
+import { WebView } from "react-native-webview";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="light" backgroundColor="#16171d" />
+      <WebView
+        source={{ uri: "https://api-react-ten.vercel.app/" }}
+        style={styles.webview}
+        startInLoadingState={true}
+        javaScriptEnabled={true}
+        domStorageEnabled={true}
+      />
     </View>
   );
 }
@@ -13,8 +20,9 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#16171d",
+  },
+  webview: {
+    flex: 1,
   },
 });
