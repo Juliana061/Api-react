@@ -17,6 +17,11 @@
         "backgroundColor": "#16171d"
       },
       "package": "com.tuusuario.tvmazeapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1d07c615-b548-4b50-99db-ad82019a71b9"
+      }
     }
   }
 }
